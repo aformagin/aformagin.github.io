@@ -2,7 +2,41 @@
     background-image:url("../imgs/xp.jpg");
 }
 
-.content{
-    padding: 16px;
+/* Reworked Bootstrap classes */
+.navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: none;
+}
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
 }
 
+/*End of reworked Bootstrap classes */
+/*@media screen and (min-width: 1000px){*/
+/*    div.content{*/
+/*        padding: 16px;*/
+/*        max-width: 800px;*/
+/*        margin-left: auto;*/
+/*        margin-right: auto;*/
+/*    }*/
+/*}*/
+
+@media screen and (min-width: 1000px){
+    div.content{
+        padding: 16px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.content{
+        padding: 24px;
+        max-width: 400px;
+        min-width: 324px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
