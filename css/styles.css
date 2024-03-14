@@ -11,7 +11,6 @@
     background-color: transparent;
     border: none;
 }
-
 /*End of reworked Bootstrap classes */
 /*@media screen and (min-width: 1000px){*/
 /*    div.content{*/
@@ -22,6 +21,26 @@
 /*    }*/
 /*}*/
 
+/* Custom Content Container*/
+.cont{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column; 
+	justify-content:space-between;
+}
+
+/* Elevations */
+.elevation-high{
+    filter: drop-shadow(-1px 10px 7px #6b6b6b);
+}
+.elevation-med{
+    filter: drop-shadow(-1px 10px 7px #b0b0b0);
+}
+.elevation-low{
+    filter: drop-shadow(-1px 10px 7px #d6d6d6);
+}
+
+/* Screen sizes for content*/
 @media screen and (min-width: 1000px){
     div.content{
         padding: 16px;
