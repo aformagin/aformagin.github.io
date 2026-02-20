@@ -48,10 +48,10 @@
     filter: drop-shadow(-1px 10px 7px #0d0d0d);
 }
 .elevation-med-dark{
-    filter: drop-shadow(-1px 10px 7px #1d1b1b);
+    filter: drop-shadow(-1px 10px 7px #111111);
 }
 .elevation-low-dark{
-    filter: drop-shadow(-1px 10px 7px #302727);
+    filter: drop-shadow(-1px 10px 7px #141414);
 }
 .orange-background{
     background-color: #f78114;
@@ -68,10 +68,12 @@
 }
 
 .pill{
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    padding: 0.45rem 1.25rem 0.45rem 1.25rem;
+    line-height: 1;
+    display: inline-block;
 }
 
 .text-white{
@@ -82,22 +84,48 @@
     margin-bottom: 1.25rem;
 }
 
-/* Screen sizes for content*/
-@media screen and (min-width: 1000px){
-    div.content{
-        padding: 16px;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* Project Cards */
+.project-card {
+    border: 1px solid #2d2d2d;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+    filter: drop-shadow(-1px 14px 10px #0d0d0d);
 }
 
-@media screen and (max-width: 600px){
-    div.content{
-        padding: 24px;
-        max-width: 400px;
-        min-width: 324px;
-        margin-left: auto;
-        margin-right: auto;
+/* Accent top borders (matches home nav card style) */
+.border-accent-orange { border-top: 3px solid #f78114 !important; }
+.border-accent-blue   { border-top: 3px solid #1485f7 !important; }
+.border-accent-purple { border-top: 3px solid #753299 !important; }
+
+/* Tech Stack Badges */
+.tech-badge {
+    background-color: #2a2a2a;
+    color: #b0b0b0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    display: inline-block;
+}
+
+/* Home Nav Cards */
+.nav-card {
+    border: 1px solid #2d2d2d;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    cursor: pointer;
+}
+.nav-card:hover {
+    transform: translateY(-4px);
+    filter: drop-shadow(-1px 14px 10px #0d0d0d);
+}
+
+/* Mobile */
+@media screen and (max-width: 576px){
+    .pill {
+        font-size: 0.9rem;
     }
 }

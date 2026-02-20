@@ -5,119 +5,184 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Include Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		<!-- Bootstrap 5 JS bundle -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="../css/styles.css">
-    </head>
+	</head>
 
+<body class="body-bg-dark">
 
-    <body class="body-bg-dark">
-   		<!--Navigation Bar-->
-		<div>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">
-						<img src="../imgs/BeardoLogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-						A. Formagin
+	<!--Navigation Bar-->
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="../imgs/BeardoLogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+					A. Formagin
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../html/projects.html">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../html/tutorials.html">Tutorials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="../html/aboutme.html">About Me</a>
+						</li>
+					</ul>
+					<a href="https://www.linkedin.com/in/austin-formagin/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">
+						<i class="bi bi-linkedin"></i>
 					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="../index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../html/projects.html">Projects</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../html/#">Tutorials</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="../html/aboutme.html">About Me</a>
-							</li>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container" style="margin-top: 1.5rem; margin-bottom: 3rem;">
+
+		<!-- Quick Info Row -->
+		<div class="pill-header">
+			<h4><span class="pill text-white orange-background">Quick Info</span></h4>
+		</div>
+		<div class="row g-4 mb-4">
+			<div class="col-12">
+				<div class="card project-card border-accent-orange bg-dark">
+					<div class="card-body bg-dark text-white">
+						<h4 class="mb-1">Get to know me!</h4>
+						<h6 class="text-secondary mb-3">I am A. Formagin,</h6>
+						<p class="card-text mb-0">a recent graduate with a Bachelor's degree in Computer Science (Applied Computing) from the University of Windsor.
+							My enthusiasm for technology was ignited in my early teens, a period during which I was deeply influenced by the complexities and opportunities
+							presented by computer systems, an interest initially spurred by the game Minecraft. In high school, I furthered this interest by enrolling in
+							Computer Science classes from grades 10 to 12 and participating in the school's Co-Op program. This program facilitated my first foray into the
+							professional world as a Junior Technician at a local IT consulting firm, a role I embraced at the age of 16 and maintained for over two years.
+							Upon completing my tenure at the firm, I pursued higher education where I honed my programming skills and IT knowledge, culminating in my degree.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Career Row -->
+		<div class="pill-header">
+			<h4><span class="pill text-white purple-background">Career</span></h4>
+		</div>
+		<div class="row g-4 mb-4">
+
+			<div class="col-md-6 col-lg-4 col-12">
+				<div class="card project-card border-accent-purple bg-dark h-100">
+					<div class="card-body bg-dark text-white">
+						<h4 class="mb-1">Ever.Ag</h4>
+						<h6 class="mb-2">Software Developer</h6>
+						<p class="mb-2"><small class="text-secondary">Aug 2023 – Present &middot; Windsor, ON</small></p>
+						<ul class="mb-0 ps-3">
+							<li>Develop reliable, performant, and user-friendly software solutions based on product requirements and technical specifications.</li>
+							<li>Perform code reviews to validate code quality, readability, and standards.</li>
+							<li>Collaborate with business analysts and product managers to develop testing scenarios and UAT requirements.</li>
+							<li>Advise product managers on technologies and methodologies to best accomplish product requirements.</li>
 						</ul>
 					</div>
 				</div>
-			</nav>
+			</div>
+
+			<div class="col-md-6 col-lg-4 col-12">
+				<div class="card project-card border-accent-purple bg-dark h-100">
+					<div class="card-body bg-dark text-white">
+						<h4 class="mb-1">Pernod Ricard</h4>
+						<h6 class="mb-2">IT Technical Services — Co-Op &amp; Part-Time Analyst</h6>
+						<p class="mb-2"><small class="text-secondary">Jan 2022 – Jun 2023 &middot; Windsor, ON</small></p>
+						<ul class="mb-0 ps-3">
+							<li>Provisioned and deployed hardware and software to enterprise users.</li>
+							<li>Analyzed, diagnosed, and troubleshot hardware and software issues.</li>
+							<li>Documented solutions and procedures digitally for company-wide use.</li>
+							<li>Organized and presented IT orientations for new employees.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 col-12">
+				<div class="card project-card border-accent-purple bg-dark h-100">
+					<div class="card-body bg-dark text-white">
+						<h4 class="mb-1">UWindsor Robotics &amp; Tech</h4>
+						<h6 class="mb-2">President &amp; Founder</h6>
+						<p class="mb-2"><small class="text-secondary">Oct 2019 – Sep 2022 &middot; Windsor, ON</small></p>
+						<ul class="mb-0 ps-3">
+							<li>Founded the club to provide encouragement, financial support, and technical mentorship to students looking to expand their skills and get started with product development.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 col-12">
+				<div class="card project-card border-accent-purple bg-dark h-100">
+					<div class="card-body bg-dark text-white">
+						<h4 class="mb-1">Enbridge</h4>
+						<h6 class="mb-2">ITS Co-Op Student</h6>
+						<p class="mb-2"><small class="text-secondary">May 2020 – Dec 2020 &middot; Chatham, ON</small></p>
+						<ul class="mb-0 ps-3">
+							<li>Analyzed and diagnosed issues in internal software applications, with a focus on the Gas Distribution Access Rules (GDAR) database.</li>
+							<li>Performed in-depth database analysis to identify process improvement opportunities.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 col-12">
+				<div class="card project-card border-accent-purple bg-dark h-100">
+					<div class="card-body bg-dark text-white">
+						<h4 class="mb-1">Kent Computer Consulting</h4>
+						<h6 class="mb-2">Computer Repair Technician</h6>
+						<p class="mb-2"><small class="text-secondary">Sep 2016 – Aug 2018 &middot; Chatham, ON</small></p>
+						<ul class="mb-0 ps-3">
+							<li>Diagnosed and resolved computer software and hardware issues for customers.</li>
+							<li>Documented customer issues through ticket and business management software.</li>
+							<li>Guided end-users through technical procedures verbally and in writing.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
 		</div>
-        <!--Beginning of the body-->
-        <div class="container" style="margin-top: 1.25rem;">
-			<div class="row">
-				<div class="col-md-6 col-sm-12">
-					<div class="p-3 mb-5 rounded">
-						<div class="elevation-low-dark">
-							<div class="pill-header">
-								<h4><span class="pill text-white orange-background">Quick Info</span></h4>
-							</div>
-							<div style="padding-bottom: 1.25rem;">
-								<div class="card bg-dark">
-									<div class="card-header text-white orange-background">
-									  <h4>Get to know me!</h4>
-									</div>
-									<div class="card-body bg-dark text-white">
-									  <h5 class="card-title" >I am A. Formagin,</h5>
-									  <p class="card-text"> 
-										a recent graduate with a Bachelor's degree in Computer Science (Applied Computing) from the University of Windsor.
-										 My enthusiasm for technology was ignited in my early teens, a period during which I was deeply influenced by the complexities and opportunities 
-										 presented by computer systems, an interest initially spurred by the game Minecraft. In high school, I furthered this interest by enrolling in 
-										 Computer Science classes from grades 10 to 12 and participating in the school's Co-Op program. This program facilitated my first foray into the 
-										 professional world as a Junior Technician at a local IT consulting firm, a role I embraced at the age of 16 and maintained for over two years. 
-										 Upon completing my tenure at the firm, I pursued higher education where I honed my programming skills and IT knowledge, culminating in my degree.
-									</div>
-								  </div>
-								</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="p-3 mb-5 rounded">
-						<div class="elevation-low-dark">
-							<div class="pill-header">
-								<h4><span class="pill text-white blue-background">Hobbies</span></h4>
-							</div>
-							<div style="padding-bottom: 1.25rem;">
-								<div class="card bg-dark">
-									<div class="card-header text-white blue-background">
-									  <h4>Lorem ipsum</h4>
-									</div>
-									<div class="card-body bg-dark text-white">
-									  <h5 class="card-title" >Filler</h5>
-									  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore eveniet dolores iste! Incidunt aperiam aspernatur voluptatum dignissimos unde, tempora quos officiis consequuntur rem corporis eligendi minus labore! Odio, placeat!
-									  </p>
-									</div>
-								  </div>
-								</div>
-						</div>
+
+		<!-- Pastimes Row -->
+		<div class="pill-header">
+			<h4><span class="pill text-white blue-background">Pastimes</span></h4>
+		</div>
+		<div class="row g-4 mb-5">
+
+			<div class="col-md-6 col-12">
+				<div class="card project-card border-accent-blue bg-dark h-100">
+					<div class="card-body bg-dark text-white">
+						<h4 class="mb-1">Homelab</h4>
+						<h6 class="text-secondary mb-3">Self-Hosted Infrastructure</h6>
+						<p class="card-text mb-0">I run a homelab as a hands-on playground for learning infrastructure and systems skills outside of a classroom setting. It hosts a mix of self-hosted services and lets me experiment with networking, virtualization, containerization, and anything else I want to tinker with.</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<div class="p-3 mb-5 rounded">
-						<div class="elevation-low-dark">
-							<div class="pill-header">
-								<h4><span class="pill text-white purple-background">Career</span></h4>
-							</div>
-							<div style="padding-bottom: 1.25rem;">
-								<div class="card bg-dark">
-									<div class="card-header text-white purple-background">
-									  <h4>Lorem ipsum</h4>
-									</div>
-									<div class="card-body bg-dark text-white">
-									  <h5 class="card-title" >Filler</h5>
-									  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore eveniet dolores iste! Incidunt aperiam aspernatur voluptatum dignissimos unde, tempora quos officiis consequuntur rem corporis eligendi minus labore! Odio, placeat!
-									  </p>
-									</div>
-								  </div>
-								</div>
-						</div>
+
+			<div class="col-md-6 col-12">
+				<div class="card project-card border-accent-blue bg-dark h-100">
+					<div class="card-body bg-dark text-white">
+						<h4 class="mb-1">Plugin &amp; Mod Development</h4>
+						<h6 class="text-secondary mb-3">Minecraft &amp; Hytale</h6>
+						<p class="card-text mb-0">I enjoy developing plugins and mods for both Minecraft and Hytale. It's a creative outlet that also sharpens real programming skills — from designing APIs and event-driven systems to managing persistent data and working within an existing engine's constraints.</p>
 					</div>
 				</div>
 			</div>
-        </div>
-        
-    </body>
+
+		</div>
+
+	</div>
+
+</body>
 </html>

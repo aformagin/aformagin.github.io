@@ -5,17 +5,18 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Include Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		<!-- Bootstrap 5 JS bundle -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
-
 	<body class="cont body-bg-dark">
 	<div name="body-content">
+
 		<!--Navigation Bar-->
-		<div name="navigation">
+		<div>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">
@@ -26,7 +27,7 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ml-auto">
+						<ul class="navbar-nav mx-auto">
 							<li class="nav-item">
 								<a class="nav-link active" href="index.html">Home</a>
 							</li>
@@ -34,29 +35,67 @@
 								<a class="nav-link" href="html/projects.html">Projects</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="html/#">Tutorials</a>
+								<a class="nav-link" href="html/tutorials.html">Tutorials</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="html/aboutme.html">About Me</a>
 							</li>
 						</ul>
+						<a href="https://www.linkedin.com/in/austin-formagin/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">
+							<i class="bi bi-linkedin"></i>
+						</a>
 					</div>
 				</div>
 			</nav>
 		</div>
-		
+
 		<!-- Start of body content-->
-		<div class="content">
+		<div class="container" style="margin-top: 1.5rem; margin-bottom: 3rem;">
 			<div class="alert alert-warning"><p><strong>Warning!</strong> This website is currently being worked on!</p></div>
-			<div class="elevation-low-dark p-3 mb-5 bg-dark rounded text-white">
-				<p>Welcome to <strong>formag.in</strong>, my personal website hosted by Github pages! Feel free to take a look around to learn about me and the projects that I am currently working on or have done in the past!</p>
+			<div class="elevation-low-dark p-3 mb-4 bg-dark rounded text-white">
+				<p class="mb-0">Welcome to <strong>formag.in</strong>, my personal website hosted by Github pages! Feel free to take a look around to learn about me and the projects that I am currently working on or have done in the past!</p>
+			</div>
+			<div class="row g-4 mb-5">
+				<div class="col-md-4 col-12">
+					<a href="html/projects.html" class="text-decoration-none">
+						<div class="card nav-card bg-dark text-white h-100" style="border-top: 3px solid #f78114;">
+							<div class="card-body text-center py-4">
+								<i class="bi bi-folder2-open" style="font-size: 2.5rem; color: #f78114;"></i>
+								<h4 class="mt-3 mb-2">Projects</h4>
+								<p class="text-secondary mb-0">Personal, class, and hackathon projects</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-12">
+					<a href="html/tutorials.html" class="text-decoration-none">
+						<div class="card nav-card bg-dark text-white h-100" style="border-top: 3px solid #753299;">
+							<div class="card-body text-center py-4">
+								<i class="bi bi-journal-code" style="font-size: 2.5rem; color: #753299;"></i>
+								<h4 class="mt-3 mb-2">Tutorials</h4>
+								<p class="text-secondary mb-0">Guides and writeups</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-12">
+					<a href="html/aboutme.html" class="text-decoration-none">
+						<div class="card nav-card bg-dark text-white h-100" style="border-top: 3px solid #1485f7;">
+							<div class="card-body text-center py-4">
+								<i class="bi bi-person-circle" style="font-size: 2.5rem; color: #1485f7;"></i>
+								<h4 class="mt-3 mb-2">About</h4>
+								<p class="text-secondary mb-0">Learn more about me</p>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
+
 	</div>
-		
-		<footer>
-			<p>A. Formagin 2024</p>
-		</footer>
+
+	<footer>
+		<p>A. Formagin 2024</p>
+	</footer>
 	</body>
 </html>
-
